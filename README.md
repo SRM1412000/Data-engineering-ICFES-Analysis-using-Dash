@@ -123,6 +123,36 @@ Because of the above, the group decided to look for a representation of the dist
 
 ## Conclusions. <a name="conc"></a>
 
+* **On the selection of the data source:**
+  About 546000 tuples (number of tests presented in the period 2019-II) were used with the data to perform the required analysis in order to fulfill the project objectives. These selected data are extracted from an official source of the State in order to guarantee a greater veracity in the obtained results. It has been decided to use this data source since its multiple number of columns allows the elaboration of different entities and attributes for a more detailed analysis. In addition, we took advantage of the easy access to these resources of public interest through the Internet, so obtaining them was not a major difficulty.
+* **About the design of the database:**
+  There are 5 entities (exam, student, school, municipality and department) in our relational model. These are systematically arranged in such a way that the different data are ordered for their correct and efficient analysis. Each one of the entities contains its attributes; these attributes contain primary keys, foreign keys and their respective restrictions according to the rules previously established for the correct functioning of the analysis on the database.
+  
+  For the entity `exam' we have the attributes `percentile', `global score', `period', `c natural score', `math score', `social score', `English score' and `critical reading score'. With `id student' as a foreign key coming from the entity `student'. The relationship of this entity with the entity `student' is based on the fact that the same student can take several exams. can take several exams.
+
+  For the entity `student' we have the attributes `id student', `date of birth', `status' and `sex'. With `school code' as a foreign key coming from the entity `school' and thus establishing the relationship between the student and his school. This relationship is thought in such a way that a student has only one school, but a school can have many students. For the entity `school' we have the attributes `code', `school name', `schedule', `gender', `location' and `nature'. The foreign key in this case is `code m' coming from the entity `municipality', establishing a relationship such that a municipality can have several schools and not the other way around. For the entity `municipality' we have the attributes `code m', `name m', `evaluated number m' and the foreign key `department d-code'. Following the same line, a department can have many municipalities, but not vice versa. not vice versa.
+
+  Finally for the entity `department' we have the attributes `codigod', `name d' and `evaluated number d'. Conclusion of the procedure: The group considers that an understandable and practical database design was achieved for the queries that the group wanted to develop. In addition, the necessary and identified relationships were established to comply with the rules proposed in the first delivery of the project. The design of the database is in third normal form, as it meets the criteria that these forms require and thus the database becomes easier to manage for the use of dash, queries and data loads. Finally, the group considers that the attributes are the right ones to identify and perform an analysis that can reflect realities of the country in the field of secondary education. The result of this procedure can be seen in the point 2 of this document and in the code of the implementation of the database available in the repository.
+
+* **About the information load:**
+  First, we performed the load for the `department' and `municipality' tables from two .csv files available in the project repository.
+
+  Secondly, to continue with the data loading it was necessary to review our first implementation of the `school' table. For the attributes `code' and `school name', the data type was changed to varchar(n) and varchar(30) respectively. Once this was done, the data was loaded from the corresponding .csv file in the repository.
+
+  Thirdly, as was done with the `school' table, some changes were also made to the `student' table. For this data load, it was necessary to modify its corresponding .csv file, because some data for the `date of birth' attribute presented a wrong format that does not contemplate the date attribute of SQL. This was fixed with the file FixingDate.cpp (located in the code folder on GitHub) which adapted the formats of this attribute. At the same time, changes were also made to the attribute stratum, as some students were showing no stratum, and these data were assigned the number -1.
+
+  Finally, for the table `exam', we removed a restriction `not null' that had been implemented to the attribute `English score', this due to the lack of some data in the .csv file. The data load was performed and the procedure was finished.
+
+  Conclusion of the procedure: During the data loading process, the group realized that, in spite of having a planned and designed database against an original idea, large data dictionaries often present inconsistencies, exceptions, spelling and typing errors that generate inconveniences when loading and analyzing them. Because of this, it is necessary that prior to the design and implementation of the database, the data be analyzed as much as possible. However, the group feels that the data loading was successful and met its objectives, which were to distribute and arrange the data in such a way that they could be consulted and analyzed to meet the project's objective.
+
+* **About the connection with the database, the development in dash and the identified analytics:**
+
+  During the connection procedure with the database, there were no problems, and we also tested the operation of different queries to visualize data from our database. The group considers the connection with the database as a simple and very practical procedure, since it allows to consult data from external sources and to make analysis with this.
+
+  During the implementation of Dash in Python the group faced several challenges. One of these challenges was to carry out an idea in which it was proposed to implement a drop-down bar in which the user could interact with the application. Following this, dash documentation was consulted to carry out this idea, which was successfully developed and attached to a bar chart in which you can see the top seven schools in each department. Another challenge to highlight was to implement the heat map of Colombia, in which it was necessary to work with JSON files to carry it out, finally the result was successful. Among other challenges, we also consulted various documentation for the decorators of the application.
+
+  Conclusion of the procedure: The goal of creating an application with the different analyses identified in the database was achieved. The group considers that the application is understandable, manageable and interactive for the users. In addition, the data are concise and clearly presented in the graphics. Therefore, the application is a great tool to analyze the data of the ICFES Saber 11 exam for the period 2019-II, which in turn reflects the situation of the country in the field of education.  
+
 
 
 
