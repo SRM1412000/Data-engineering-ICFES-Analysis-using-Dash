@@ -79,3 +79,53 @@ Because of the above, the group decided to look for a representation of the dist
 *Figure 9: Bar chart of average score by subject. Males and females*
 
 ## Discussions of developed analyses <a name="disc"></a>
+
+* **Figure 1 and Figure 2:**
+  * **Advantages:** In figure 1 and 2 you can appreciate a pleasant environment and easy to understand for the user. As a first step, the user can enter text to easily locate the department he/she wants to study and can also search for it in the drop-down bar. Then, the user observes in an understandable way the average of the global score obtained by the average global score obtained by the school belonging to the department the user selects, where the user can easily move the mouse over a bar corresponding to the name of a school the mouse over a bar corresponding to the name of a school, and the exact number for the exact number for the average score.
+
+  * **Disadvantages:** In some cases, the name of the educational institution is very large, so that a complete analysis can be difficult at first glance, however, there is a "zoom in" option to make the graph a little larger so that the user can understand it satisfactorily.
+    
+* **Figure 3:**
+  * **Advantages:** Figure 3 stands out for its easy comprehension, organization and provides the option to use a slider to classify the scores according to their stratum providing an easy interaction with the user.
+
+  * **Disadvantages:** Disadvantages: Graphics can become monochrome.
+
+* **Figure 4:**
+  * **Advantages:** The design of this heat map is aesthetically pleasing and understandable. It clearly reflects which areas/departments of the country are the best performers on the English tests. The graph provides a spatial notion about the analysis performed.
+
+  * **Disadvantages:** It is not possible to visualize the insular region of San Andres and Providencia in the heat map due to its small size compared to the other regions.
+ 
+* **Figure 5:**
+  * **Advantages:** This diagram has the advantage of allowing us to visualize the proportions of a value, in this case the number of students per stratum. It is easy to understand and is practical when inferring the results. In this case, it is easy to reflect the social inequality in Colombian education. In addition, it provides the opportunity to see a numerical value for those who prefer it.
+
+  * **Disadvantages:** The group does not find a significant disadvantage in this figure.
+ 
+* **Figure 6:**
+  * **Advantages:** The bar chart is understandable because the chromatic characterization is organized and clear. It has similar advantages to Figure 3.
+
+  * **Disadvantages:** There may be some redundancy between the colors and the scale.
+
+* **Figure 7:**
+  * **Advantages:** The horizontal bar chart allows us to see in a hierarchical and understandable way the scores of the top ten schools in Colombia. At the same time, the names of the schools are visualized in a better way than in a vertical bar chart. The scale of scores allows us to visualize that although these schools are the best in the country, there are great differences between them.
+
+  * **Disadvantages:** The diagram is organized from the lowest to the highest score, however, an aspect to improve would be to place them in a countable way. You can also think of a grid that lists the data, in this case, the school.
+
+* **Figure 8:**
+  * **Advantages:** For the analysis that concerns this bar chart, we have the advantage that there are only two bars to be contrasted, so it is easy to understand and visualize.
+
+  * **Disadvantages:** We found no major disadvantages in interpreting the results or evaluating their esthetics.
+
+* **Figure 9:**
+  * **Advantages:** The gender bar chart highlights the ease of understanding by its attractive and identifiable colors. At the same time, the bars provide a clear visualization for each category.
+
+  * **Disadvantages:** In the future, the labels under each examined area can be modified to facilitate the understanding of the results.
+
+
+
+
+
+
+
+
+
+
