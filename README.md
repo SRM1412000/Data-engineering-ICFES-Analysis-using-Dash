@@ -7,6 +7,7 @@
 - [Relational Model in Third Normal Form.](#model)
 - [Description of analyses developed.](#desc)
 - [Discussions of developed analyses.](#disc)
+- [Conclusions.](#conc)
 
 ## Problem
 The ICFES Saber-11 state exam evaluates the degree of knowledge in the academic areas of students who are about to finish high school.
@@ -120,7 +121,7 @@ Because of the above, the group decided to look for a representation of the dist
 
   * **Disadvantages:** In the future, the labels under each examined area can be modified to facilitate the understanding of the results.
 
-
+## Conclusions. <a name="conc"></a>
 
 
 
